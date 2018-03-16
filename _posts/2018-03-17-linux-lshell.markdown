@@ -221,10 +221,7 @@ semoga aja settingan lshell atau other shell bisa di spawn.. :p
 
 
 Referensi :
-https://packages.debian.org/wheezy/lshell
-
-https://tecadmin.net/how-to-limit-user-a...ted-shell/
-
-https://www.aldeid.com/wiki/Lshell
-
-https://netsec.ws/?p=337
+*https://packages.debian.org/wheezy/lshell
+*https://tecadmin.net/how-to-limit-user-a...ted-shell/
+*https://www.aldeid.com/wiki/Lshell
+*https://netsec.ws/?p=337
