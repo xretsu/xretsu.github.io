@@ -151,34 +151,36 @@ strict          : 0
 
 ##  define the script to run at user login
 #login_script     : "/path/to/myscript.sh"
+{% endhighlight %}
+
 
 Basic Configuration:
+pada bagian *[default]* Settingan untuk menetapkan nilai default yang diterapkan pada semua pengguna dan grup. Pengaturan bagian ini dapat diganti dengan pengaturan khusus pengguna dan kelompok.
 
-
-[default] Settingan untuk menetapkan nilai default yang diterapkan pada semua pengguna dan grup. Pengaturan bagian ini dapat diganti dengan pengaturan khusus pengguna dan kelompok.
-Code:
+{% highlight bash %}
 [default]
 ##  a list of the allowed commands or 'all' to allow all commands in user's PATH
 allowed         : ['ls','echo','cd','ll']
 
 ##  a list of forbidden character or commands -- deny vim, as it allows to escape lshell
 forbidden       : [';', '&', '|','`','>','<', '$(', '${']
+------skip------
 {% endhighlight %}
 
-------skip------
 
 > dibagian allowed kita bisa menambahkan command yang (bisa) digunakan. jadi hanya perintah yang didaftarkan saja yang bisa digunakan, yang tidak ditambahkan tidak dapat digunakan.
+
 
 ![alt text](https://image.prntscr.com/image/pswPHDzkR-GkIUtZQT2Bcw.png)
 
 atau bisa lihat dsini [ASCIINEMA](https://asciinema.org/a/ZqbniPbF6ym33uQ7PbnCIIxY8)
+
 
 yarp sebenarnya masih banyak fungsi lshell yang lain, silahkan di explore lebih jauh lagi....
 btw kita bisa memanfaatkan lshell untuk default login shell di ssh pada beberapa kondisi seperti untuk soal-soal remote easy CTF dan untuk nge-troll user-user nakal.. asal jangan di troll balik saja... tinggal pakai perintah chsh saja untuk user yang di inginkan...
 
 
 BONUS :
-
 Bypassing Shell :
 
 {% highlight bash %}
@@ -219,9 +221,4 @@ exec "/bin/sh"
 semoga aja settingan lshell atau other shell bisa di spawn.. :p
 
 
-Referensi :
-
-* https://packages.debian.org/wheezy/lshell
-* https://tecadmin.net/how-to-limit-user-a...ted-shell/
-* https://www.aldeid.com/wiki/Lshell
-* https://netsec.ws/?p=337
+Original Thread : http://forum.codernate.org/showthread.php?tid=64
