@@ -7,9 +7,7 @@ description: Introduction
 Assalamulaikum.. nge-thread lagi nih...
 kali ini tentang limited shell a.k.a lshell, nah apa itu lshell?
 
-> "lshell is a shell coded in Python, that lets you restrict a user's environment to limited sets of commands, choose to enable/disable any command over SSH (e.g. SCP, SFTP, rsync, etc.), log user's commands, implement timing restriction, and more. "
-
-via : https://github.com/ghantoos/lshell
+> "lshell is a shell coded in Python, that lets you restrict a user's environment to limited sets of commands, choose to enable/disable any command over SSH (e.g. SCP, SFTP, rsync, etc.), log user's commands, implement timing restriction, and more. " - https://github.com/ghantoos/lshell
 
 oke lanjut, installation :
 
@@ -25,11 +23,12 @@ oke lanjut, installation :
        yum install lshell
 {% endhighlight %}
 
+
 ![alt text](https://image.prntscr.com/image/Yzj0t10RSC2mqUwb9DDQfg.png)
 
-yup cara penggunaan :
 
-Switch User to LShell dengan command chsh atau change shell, ketik sudo chsh nama_user + enter
+yup cara penggunaan :
+Switch User to LShell dengan command chsh atau change shell, ketik **sudo chsh nama_user + enter**
 {% highlight bash %}
 ┌─[geek|plankton ~]
 └─$ sudo chsh geek
@@ -45,7 +44,7 @@ $ sudo adduser --shell /usr/bin/lshell nama_user
 {% endhighlight %}
 
 Configure LShell :
-file konfigurasi lshell ada pada directory /etc/lshell.conf
+file konfigurasi lshell ada pada directory **/etc/lshell.conf**
 nih isinya :
 
 {% highlight bash %}
@@ -168,7 +167,7 @@ forbidden       : [';', '&', '|','`','>','<', '$(', '${']
 
 ------skip------
 
-note : dibagian allowed kita bisa menambahkan command yang (bisa) digunakan. jadi hanya perintah yang didaftarkan saja yang bisa digunakan, yang tidak ditambahkan tidak dapat digunakan.
+> dibagian allowed kita bisa menambahkan command yang (bisa) digunakan. jadi hanya perintah yang didaftarkan saja yang bisa digunakan, yang tidak ditambahkan tidak dapat digunakan.
 
 ![alt text](https://image.prntscr.com/image/pswPHDzkR-GkIUtZQT2Bcw.png)
 
