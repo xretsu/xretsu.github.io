@@ -172,9 +172,7 @@ note : dibagian allowed kita bisa menambahkan command yang (bisa) digunakan. jad
 
 ![alt text](https://image.prntscr.com/image/pswPHDzkR-GkIUtZQT2Bcw.png)
 
-penampakan :
-![alt text](https://asciinema.org/a/ZqbniPbF6ym33uQ7PbnCIIxY8)
-
+atau bisa lihat dsini [ASCIINEMA](https://asciinema.org/a/ZqbniPbF6ym33uQ7PbnCIIxY8)
 
 yarp sebenarnya masih banyak fungsi lshell yang lain, silahkan di explore lebih jauh lagi....
 btw kita bisa memanfaatkan lshell untuk default login shell di ssh pada beberapa kondisi seperti untuk soal-soal remote easy CTF dan untuk nge-troll user-user nakal.. asal jangan di troll balik saja... tinggal pakai perintah chsh saja untuk user yang di inginkan...
