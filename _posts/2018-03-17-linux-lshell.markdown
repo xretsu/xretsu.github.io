@@ -7,7 +7,7 @@ description: Introduction
 Assalamulaikum.. nge-thread lagi nih...
 kali ini tentang limited shell a.k.a lshell, nah apa itu lshell?
 
-"lshell is a shell coded in Python, that lets you restrict a user's environment to limited sets of commands, choose to enable/disable any command over SSH (e.g. SCP, SFTP, rsync, etc.), log user's commands, implement timing restriction, and more. "
+> "lshell is a shell coded in Python, that lets you restrict a user's environment to limited sets of commands, choose to enable/disable any command over SSH (e.g. SCP, SFTP, rsync, etc.), log user's commands, implement timing restriction, and more. "
 
 via : https://github.com/ghantoos/lshell
 
@@ -221,7 +221,8 @@ semoga aja settingan lshell atau other shell bisa di spawn.. :p
 
 
 Referensi :
-*https://packages.debian.org/wheezy/lshell
-*https://tecadmin.net/how-to-limit-user-a...ted-shell/
-*https://www.aldeid.com/wiki/Lshell
-*https://netsec.ws/?p=337
+
+* https://packages.debian.org/wheezy/lshell
+* https://tecadmin.net/how-to-limit-user-a...ted-shell/
+* https://www.aldeid.com/wiki/Lshell
+* https://netsec.ws/?p=337
