@@ -25,7 +25,7 @@ oke lanjut, installation :
        yum install lshell
 {% endhighlight %}
 
-[Image: Yzj0t10RSC2mqUwb9DDQfg.png]
+![alt text](https://image.prntscr.com/image/Yzj0t10RSC2mqUwb9DDQfg.png)
 
 yup cara penggunaan :
 
